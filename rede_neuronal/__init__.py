@@ -1,0 +1,3 @@
+from rede_neuronal.rede_neuronal import Rede_Neuronal
+from rede_neuronal.rede_neuronal import tanh
+from rede_neuronal.rede_neuronal import np
