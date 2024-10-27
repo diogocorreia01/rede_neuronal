@@ -105,9 +105,9 @@ forma = [3, 5, 3]  # 3 entradas, 5 neurônios na camada oculta, 3 saídas
 rede = Rede_Neuronal(forma, tanh)  # Função de ativação tanh
 
 # Parametros de treino
-n_epocas = 10000  # Número total de épocas para o treino da rede neural
-epsilon_max = 0.01  # Valor máximo de epsilon
-alfa = 0.01  # Taxa de aprendizagem
+n_epocas = 30000  # Número total de épocas para o treino da rede neural
+epsilon_max = 0.002  # Valor máximo de epsilon
+alfa = 0.0005  # Taxa de aprendizagem
 beta = 0.9  # Fator de aceleração
 
 # Treinar a rede com os dados dos triângulos
