@@ -5,7 +5,7 @@ import pickle
 
 # Função para calcular a perda
 def cross_entropy(y_true, y_pred):
-    # Adicione uma pequena constante para evitar log(0)
+    # Constante para evitar log(0)
     epsilon = 1e-9
     y_pred = np.clip(y_pred, epsilon, 1 - epsilon)  # Para evitar log(0)
     return -np.mean(np.sum(y_true * np.log(y_pred), axis=1))  # Média da perda
@@ -101,11 +101,11 @@ Y = np.array([item[1] for item in dados_treino])  # Saídas do conjunto de dados
 X = X / np.max(X)  # Normaliza os dados de entrada dividindo-os pelo valor máximo
 
 # Definição da rede neuronal
-forma = [3, 5, 3]  # 3 entradas, 5 neurônios na camada oculta, 3 saídas
+forma = [3, 5, 3]  # 3 entradas, 5 neuronios na camada oculta, 3 saídas
 rede = Rede_Neuronal(forma, tanh)  # Função de ativação tanh
 
 # Parametros de treino
-n_epocas = 30000  # Número total de épocas para o treino da rede neural
+n_epocas = 30000  # Número total de épocas para o treino da rede neuronal
 epsilon_max = 0.002  # Valor máximo de epsilon
 alfa = 0.0005  # Taxa de aprendizagem
 beta = 0.9  # Fator de aceleração
