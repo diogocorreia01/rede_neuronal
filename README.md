@@ -26,8 +26,8 @@ Este projeto permite que os utilizadores insiram os comprimentos dos lados de um
 2. Ao correr o ficheiro aplicacao_problema.py irá introduzir os respetivos lados do trinângulo e obter o resultado da classificação feita pela Rede Neuronal.
 
    ```bash
-   Digite o comprimento do lado 1: 3
-   Digite o comprimento do lado 2: 3
-   Digite o comprimento do lado 3: 1
-   O triângulo é do tipo: Isósceles
+   Digite o comprimento do lado 1: 2
+   Digite o comprimento do lado 2: 2
+   Digite o comprimento do lado 3: 2
+   O triângulo é do tipo: Equilátero
    ```
